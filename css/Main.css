@@ -40,6 +40,10 @@ section.topo_do_site .flex{
 
 @media screen and (max-width:1020px){
 
+    body{
+        overflow-y: auto
+    }
+
     .flex{
         flex-direction: column-reverse;
     }
