@@ -1,0 +1,141 @@
+:root {
+    --Fundo_Ti_But: #315569;
+    --Fundo_Identificador:  #000000;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    gap: 20px;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.box-container {
+    margin-bottom: 16px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form label,
+.form input {
+    margin-bottom: 8px;
+}
+
+.form input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form button {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: var(--Fundo_Ti_But);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.form button:hover {
+    background-color: #0056b3;
+}
+
+.result-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.result-table th,
+.result-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.result-table th {
+    background-color: #f2f2f2;
+}
+
+.Aprovado {
+    background-color: #00FF00;
+}
+
+.Recuperacao {
+    background-color: #FFFF00;
+}
+
+.Reprovado {
+    background-color: #FF0000;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header a {
+    color: var(--Fundo_Tex);
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+.btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: var(--Fundo_Ti_But);
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+header nav.menu-desktop a:hover,
+.btn-contato button:hover {
+    color: #7f8181;
+    transform: scale(1.05);
+}
+
+.btn-contato button:hover {
+    box-shadow: 0px 0px 8px var(--Fundo_Ti_But);
+}

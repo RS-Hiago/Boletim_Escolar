@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#section {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    max-width: 400px; 
+    width: 100%;
+}
+
+button{
+    margin: 20px;
+}
+
+
+.validador {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.validador input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+a {
+    color: #333;
+    display: block;
+    margin-top: 10px;
+}
+
+button {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: gray;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .2s;
+}

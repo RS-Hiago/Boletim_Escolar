@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boletim Escolar</title>
+    <link rel="stylesheet" href="./css/Boletim.css">
+</head>
+<body>
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <a href="#">
+                    <img src="./img/img.icons8.png" alt="Logo">
+                </a>
+            </div>
+            
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="./Index.html">Início</a></li>
+                    <li><a href="#">Projetos</a></li>
+                    <li><a href="./Aluno.html">Veja seu Boletim</a></li>
+                </ul>
+            </nav>
+
+            <div class="btn-contato">
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="">
+                    <button>Surpresa</button>
+                </a>
+            </div>
+    </header>
+
+    <section class="flex-container">
+        <div id="caixas" class="box-container">
+            <form id="formAluno" class="form" onsubmit="event.preventDefault(); BoletimEscolar();">
+                <label for="nomeAluno">Nome do Aluno:</label>
+                <input id="nomeAluno" type="text" placeholder="Nome do aluno" required>
+    
+                <label for="n1">Nota 1°Bim:</label>
+                <input id="n1" type="number" placeholder="Nota 1°Bim" required> 
+    
+                <label for="n2">Nota 2°Bim:</label>
+                <input id="n2" type="number" placeholder="Nota 2°Bim" required> 
+    
+                <label for="n3">Nota 3°Bim:</label>
+                <input id="n3" type="number" placeholder="Nota 3°Bim" required>
+    
+                <label for="n4">Nota 4°Bim:</label>
+                <input id="n4" type="number" placeholder="Nota 4°Bim" required>
+
+                <button type="submit" id="botao">Adicionar</button>
+                <button type="button" id="botaoMG" onclick="calcularMediaGeral()">Calcular Média Geral</button>
+                <button type="button" id="botaoRisco" onclick="alunosRisco()">Alunos em situação de risco</button>
+            </form>
+        </div>
+
+        <div id="resultados" class="box-container">
+            <table class="result-table" id="tabelaResultados">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Nota 1</th>
+                        <th>Nota 2</th>
+                        <th>Nota 3</th>
+                        <th>Nota 4</th>
+                        <th>Média</th>
+                        <th>Situação</th>
+                    </tr>
+                </thead>
+                <tbody id="corpoTabelaResultados"></tbody>
+            </table>
+        </div>
+
+        <script src="./js/Calculos.js"></script>
+    </section>
+</body>
+</html>

@@ -1,0 +1,121 @@
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+header{
+    padding: 40px 4%;
+    background-color: var(--Fundo_01);
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    font-size: 20px;
+    font-family: var(--Fonte_Ti);
+    color: #F0F0F0;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav.menu-desktop li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 100;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: var(--Fundo_Ti_But);
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+header nav.menu-desktop a:hover{
+    color: #CCCCCC;
+    transform: scale(1.05);
+}
+
+.btn-contato button:hover{
+    box-shadow:  0px 0px 8px var(--Fundo_Ti_But);
+    transform: scale(1.05);
+}
+
+.btn-abrir-menu{
+    display: none;
+}
+
+.menu-mobile{
+    background: red;
+    width: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999999;
+    width: 70%;
+    width: 0%;
+    overflow: hidden;
+    transition: .2s;
+}
+
+.menu-mobile nav ul{
+    text-align: right;
+}
+
+.menu-mobile nav li a{
+    color: #7f8181;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 8%;
+    display: block;
+}
+
+.menu-mobile nav li a:hover{
+    background-color: black;
+    color: #7f8181;
+}
+.menu-mobile .btn-fechar{
+    padding: 20px 8%;
+}
+
+.menu-mobile .btn-fechar i{
+    color: aqua;
+    font-size: 40px;
+}
+
+.btn-abrir-menu i{
+    color: black;
+    font-size: 40px;
+}
+
+.overlay-menu{
+    background-color: #000000a7;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 88888;
+    display: none;
+}
+
+.menu-mobile.abrir-menu {
+    width: 70%;
+}
+
+.menu-mobile.abrir-menu ~ .overlay-menu{
+    display: block;
+}

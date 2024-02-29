@@ -1,0 +1,59 @@
+body{
+    height: 100vh;
+    background-image: url(../img/fundo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-y: hidden;
+}
+
+.flex{
+    display: flex;
+}
+
+section.topo_do_site{
+    padding: 40px 4%;
+}
+
+section.topo_do_site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo_do_site h1{
+    color: var(--Fundo_Ti_But);    
+    font-size: 42px;
+    font-family: var(--Fonte_Ti);
+    line-height: 40px;
+}
+
+.topo_do_site .txt_topo_site p{
+    color: var(--Fundo_Ti_But);
+    margin: 40px 0px;
+    font-family: var(--Fonte_Tex);
+    font-size: 25px;
+}
+
+.topo_do_site .img_topo_site img{
+    border-radius: 30px;
+}
+
+@media screen and (max-width:1020px){
+
+    .flex{
+        flex-direction: column-reverse;
+    }
+    .menu-desktop, .btn-contato{
+        display: none;
+    }
+    section.topo_do_site{
+        padding: 20px 8%;
+    }
+
+    .topo_do_site .img_topo_site img{
+        width: 100%;
+    }
+    .btn-abrir-menu{
+        display: block;
+    }
+}
