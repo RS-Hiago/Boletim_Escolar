@@ -11,6 +11,6 @@ function login(){
     }
     catch(err){
         alert(err)
-        window.location.href = "Index.html"
+        window.location.href = "index.html"
     }
 }
