@@ -59,7 +59,7 @@ header nav.menu-desktop a:hover{
 }
 
 .menu-mobile{
-    background: red;
+    background: var(--Fundo_02);
     width: 100vh;
     position: fixed;
     top: 0;
